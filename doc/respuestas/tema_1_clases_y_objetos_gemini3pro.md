@@ -19,9 +19,16 @@ Por favor, escribe en impersonal las respuestas.
 
 ### Respuesta
 
-Las cuatro características fundamentales de la programación orientada a objetos son la abstracción, el encapsulamiento, la herencia y el polimorfismo. La abstracción permite simplificar la realidad seleccionando solo los atributos y comportamientos relevantes para el problema a resolver, ignorando los detalles innecesarios. El encapsulamiento consiste en ocultar el estado interno de un objeto y requerir que todas las interacciones se realicen a través de una interfaz definida, lo que protege la integridad de los datos, similar a cómo se usan funciones específicas para manipular un `FILE*` en C sin acceder directamente a sus campos.
+Las cuatro características fundamentales de la programación orientada a objetos son: 
+#### Abstracción, "Olvidar detalles" 
 
-La herencia favorece la reutilización de código permitiendo crear nuevas clases basadas en otras existentes, heredando sus atributos y comportamientos, de modo que se pueden establecer jerarquías "es-un". Por último, el polimorfismo es la capacidad que tienen objetos de diferentes clases de responder al mismo mensaje o llamada a función de maneras distintas, permitiendo escribir código genérico que puede trabajar con diferentes tipos de objetos sin conocer su clase exacta en tiempo de compilación.
+La abstracción permite simplificar la realidad seleccionando solo los atributos y comportamientos relevantes para el problema a resolver, ignorando los detalles innecesarios. Además, facilita el cambio.
+#### Encapsulamiento, "Unir estado y comportamiento"
+El encapsulamiento consiste en ocultar el estado interno de un objeto y requerir que todas las interacciones se realicen a través de una interfaz definida, lo que protege la integridad de los datos, similar a cómo se usan funciones específicas para manipular un `FILE*` en C sin acceder directamente a sus campos.
+#### Herencia, "Establecer jerarquías"
+La herencia favorece la reutilización de código permitiendo crear nuevas clases basadas en otras existentes, heredando sus atributos y comportamientos, de modo que se pueden establecer jerarquías "es-un".
+#### Polimorfismo, "Misma función, distintas formas (o implementaciones)"
+Por último, el polimorfismo es la capacidad que tienen objetos de diferentes clases de responder al mismo mensaje o llamada a función de maneras distintas, permitiendo escribir código genérico que puede trabajar con diferentes tipos de objetos sin conocer su clase exacta en tiempo de compilación.
 
 
 ## 2. Cita cuatro lenguajes populares que permitan la programación orientada a objetos
@@ -37,9 +44,11 @@ Otros ejemplos destacados son Python, conocido por su sintaxis clara y tipado di
 
 ### Respuesta
 
-La programación estructurada es un paradigma que busca mejorar la claridad y calidad del código utilizando únicamente subrutinas y tres estructuras de control básicas: secuencia, selección (if/else) e iteración (bucles), eliminando el uso descontrolado de la instrucción `goto` que era común anteriormente. En C, esto se traduce en escribir funciones limpias y bucles bien definidos en lugar de saltos arbitrarios.
+Antes de la llegada de la programación estructurada, el desarrollo se basaba en el flujo lineal de instrucciones propio del ensamblador. En este nivel, el control de la ejecución dependía de saltos arbitrarios e instrucciones de salto condicional como `IMP` (saltar si el resultado es distinto de cero), lo que frecuentemente resultaba en programas con una lógica enmarañada y difícil de seguir, conocida como código espagueti.
 
-Por otro lado, la programación modular va un paso más allá y propone dividir el programa en módulos independientes e intercambiables, cada uno con una funcionalidad y responsabilidad específica. En C, esto se implementa típicamente separando el código en múltiples archivos `.c` (implementación) y `.h` (interfaz), donde cada módulo oculta sus detalles internos y expone solo lo necesario, sentando las bases conceptuales para lo que posteriormente sería el encapsulamiento en la orientación a objetos.
+La programación estructurada surge para organizar este caos, proponiendo que cualquier algoritmo puede representarse mediante solo tres estructuras de control: secuencia, selección e iteración. Al sustituir los saltos manuales por construcciones de alto nivel como bucles y condicionales, se elimina la necesidad de emplear la instrucción `goto`, permitiendo una lectura del código mucho más natural y predecible, similar a como se estructuran las funciones estándar en C.
+
+Por su parte, la programación modular propone la división del sistema en componentes independientes y funcionales llamados módulos. En el lenguaje C, esto se implementa mediante la separación del código en archivos de cabecera (`.h`) para la interfaz y archivos de implementación (`.c`), lo que permite ocultar los detalles internos de cada módulo y exponer únicamente las funciones necesarias, facilitando la reutilización y el mantenimiento de grandes sistemas de software.
 
 ## 4. ¿Qué tres elementos definen a un objeto en programación orientada a objetos?
 
